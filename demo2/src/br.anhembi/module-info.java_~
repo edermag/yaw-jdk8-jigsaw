@@ -1,0 +1,7 @@
+//modulo requer globalcode
+module br.anhembi @ 0.1 {
+
+	requires br.globalcode;
+
+	class br.anhembi.Anhembi;
+}

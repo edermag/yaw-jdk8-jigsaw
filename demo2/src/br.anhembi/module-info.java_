@@ -1,0 +1,7 @@
+//modulo invalido! Requer globalcode, mas globalcode soh pode ser acessado por yaw!
+module br.anhembi @ 0.1 {
+
+	requires br.globalcode;
+
+	class br.anhembi.Anhembi;
+}

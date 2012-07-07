@@ -1,0 +1,12 @@
+# Comando para compilar um modulo (-d indica o diretorio de saida, -modulepath as dependencias)
+javac -d modules -modulepath modules -sourcepath src `find src -name '*.java'`
+
+#cria uma biblioteca de modulos
+jmod -L myaw create   # myaw eh o nome da biblioteca
+
+#instala o modulo na biblioteca
+jmod -L myaw install modules br.yaw
+
+
+#executa o modulo
+java -L myaw -m br.yaw
